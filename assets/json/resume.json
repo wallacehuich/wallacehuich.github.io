@@ -13,6 +13,10 @@
       "url": "https://www.hku.hk/",
       "area": "Physical Geochemistry",
       "studyType": "Doctor of Philosophy (PhD)",
+      "supervisor": {
+        "name": "Prof Kono Lemke",
+        "url": "https://www.earthsciences.hku.hk/people/academic_staff/9/?back=002155a6892d02c4aeb51f38bd3d629f"
+      },
       "startDate": "2020",
       "endDate": "Present"
     },
