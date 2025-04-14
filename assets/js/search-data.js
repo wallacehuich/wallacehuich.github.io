@@ -462,13 +462,6 @@ ninja.data = [{
           window.open("mailto:%77%61%6C%6C%68%38%31%37@%63%6F%6E%6E%65%63%74.%68%6B%75.%68%6B", "_blank");
         },
       },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/www.linkedin.com/in/wallace-hui-b14351118", "_blank");
-        },
-      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
