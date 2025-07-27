@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: University of Hong Kong, PhD candidate, Theoretical geochemistry
+subtitle: University of Hong Kong, PhD (Theoretical geochemistry)
 
 profile:
   align: right
