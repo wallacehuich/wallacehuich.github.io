@@ -13,7 +13,8 @@ How does hydrogen bonding in water molecules relate to the history of humans in 
 
 Together, we looked at:
 • The history of Inuits and their migration across generations
-• The phase diagram of water and its many exotic forms of ice ￼ Snow’s thermal conductivity and its role as a building material for Igloos • How these physical principles underpin the construction of Igloos, and ultimately shape the resilience of Inuit populations
+• The phase diagram of water and its many exotic forms of ice ￼ Snow’s thermal conductivity and its role as a building material for Igloos 
+• How these physical principles underpin the construction of Igloos, and ultimately shape the resilience of Inuit populations
 
 [View the lecture slides →](https://igloo-e6sc6s2.gamma.site)
 
