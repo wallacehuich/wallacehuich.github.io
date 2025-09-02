@@ -21,13 +21,13 @@ I recently gave a public talk at the Hong Kong Space Museum, exploring how molec
     <img src="/assets/img/teaching/Spacemuseum_Aug2025/cover.png" alt="HKSM talk photo 2" class="img-fluid rounded">
   </div>
   <div class="col-12 col-md-4 mb-3">
-    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic1.jpeg" alt="HKSM talk photo 3" class="img-fluid rounded">
+    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic1.jpg" alt="HKSM talk photo 3" class="img-fluid rounded">
   </div>
   <div class="col-12 col-md-4 mb-3">
-    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic2.jpeg" alt="HKSM talk photo 4" class="img-fluid rounded">
+    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic2.jpg" alt="HKSM talk photo 4" class="img-fluid rounded">
   </div>
   <div class="col-12 col-md-4 mb-3">
-    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpeg" alt="HKSM talk photo 5" class="img-fluid rounded">
+    <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpg" alt="HKSM talk photo 5" class="img-fluid rounded">
   </div>
 </div>
 
