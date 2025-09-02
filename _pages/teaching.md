@@ -23,9 +23,6 @@ Together, we looked at:
     <img src="/assets/img/teaching/Spacemuseum_Aug2025/arctic_cartoon.jpg" alt="HKSM talk photo 1" class="img-fluid rounded">
   </div>
   <div class="col-12 col-md-4 mb-3">
-    <img src="/assets/img/teaching/Spacemuseum_Aug2025/cover.png" alt="HKSM talk photo 2" class="img-fluid rounded">
-  </div>
-  <div class="col-12 col-md-4 mb-3">
     <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic1.jpg" alt="HKSM talk photo 3" class="img-fluid rounded">
   </div>
   <div class="col-12 col-md-4 mb-3">
@@ -35,4 +32,3 @@ Together, we looked at:
     <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpg" alt="HKSM talk photo 5" class="img-fluid rounded">
   </div>
 </div>
-
