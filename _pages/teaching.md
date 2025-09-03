@@ -12,7 +12,7 @@ nav_order: 6
   <div class="col-12">
     <h3 class="mb-3 igloo-title">
       From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity
-      <span class="subtitle">(Hong Kong Space Museum, 30 Aug 2025)</span>
+      <span class="subtitle">Hong Kong Space Museum, 30th Aug 2025</span>
     </h3>
   </div>
 
@@ -24,7 +24,7 @@ nav_order: 6
 
     <p class="justify mb-2"><strong>Together, we looked at:</strong></p>
     <ul class="justify">
-      <li>The history of Inuit and their migration across generations</li>
+      <li>The history of Inuit populations and their migration across generations</li>
       <li>The phase diagram of water and its many exotic forms of ice</li>
       <li>Snow’s thermal conductivity and its role as a building material for igloos</li>
       <li>How these physical principles underpin the construction of igloos, and ultimately shape the resilience of Inuit populations</li>
