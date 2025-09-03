@@ -1,0 +1,15 @@
+/* Teaching: igloo section */
+.teach-igloo .justify,
+.teach-igloo li {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.teach-igloo ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.teach-igloo .carousel .carousel-item img {
+  object-fit: cover;
+}
