@@ -1,6 +1,6 @@
 /* --- Custom styles for the Igloo Teaching section --- */
 
-/* Make the page text nicely justified */
+/* Justified body text and list items */
 .teach-igloo .justify,
 .teach-igloo li {
   text-align: justify;
@@ -12,7 +12,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Title split: keep main title size; make date smaller on a new line */
+/* Title split: keep main title size; put date on a smaller new line */
 .igloo-title .subtitle {
   display: block;
   font-size: 0.8em;          /* smaller date line */
@@ -20,24 +20,73 @@
   margin-top: .15rem;
 }
 
-/* Carousel visuals + larger click targets */
-.igloo-carousel .carousel-item img {
-  aspect-ratio: 16 / 9;      /* consistent frame */
-  object-fit: cover;
+/* ============================
+   Self-contained slideshow
+   (no Bootstrap JS required)
+   ============================ */
+
+.igloo-slider {
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
 }
 
-/* Make arrow hit-areas wider (easier to click) */
-.igloo-carousel .carousel-control-prev,
-.igloo-carousel .carousel-control-next {
-  width: 12%;
+.igloo-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Make arrow icons larger + add subtle shadow for visibility */
-.igloo-carousel .carousel-control-prev-icon,
-.igloo-carousel .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
-  background-size: 100% 100%;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,.35));
+/* Each slide fills the frame */
+.igloo-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* consistent frame */
+  object-fit: cover;         /* neat crop; use 'contain' if you prefer letterboxing */
+  scroll-snap-align: center;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Big, clear, accessible nav arrows */
+.igloo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .55);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+  z-index: 2;
+}
+
+.igloo-nav.prev { left: 8px; }
+.igloo-nav.next { right: 8px; }
+
+.igloo-nav:focus {
+  outline: 2px solid rgba(255,255,255,.85);
+  outline-offset: 2px;
+}
+
+@media (hover:hover) {
+  .igloo-nav:hover { background: rgba(0, 0, 0, .75); }
+}
+
+/* Hide scrollbar for a cleaner look (visual only) */
+.igloo-track::-webkit-scrollbar { display: none; }
+
+/* Optional: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .igloo-track { scroll-behavior: auto; }
 }
