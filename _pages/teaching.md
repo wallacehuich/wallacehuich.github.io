@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-<div class="row teach-igloo my-4">
+<div class="row teach-igloo my-4" id="igloo-section">
   <!-- FULL-WIDTH TITLE -->
   <div class="col-12">
     <h3 class="mb-3 igloo-title">
@@ -37,33 +37,53 @@ nav_order: 6
 
   <!-- SLIDESHOW (RIGHT) -->
   <div class="col-md-6">
-    <div id="iglooCarousel" class="carousel slide igloo-carousel"
-         data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/assets/img/teaching/Spacemuseum_Aug2025/arctic_cartoon.jpg" class="d-block w-100 rounded" alt="Illustration">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic1.jpg" class="d-block w-100 rounded" alt="On stage">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic2.jpg" class="d-block w-100 rounded" alt="Audience Q&amp;A">
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpg" class="d-block w-100 rounded" alt="Group photo">
-        </div>
+    <div class="igloo-slider" id="iglooSlider1" aria-label="Igloo talk photo slideshow">
+      <div class="igloo-track" data-track>
+        <img src="/assets/img/teaching/Spacemuseum_Aug2025/arctic_cartoon.jpg" class="igloo-slide" alt="Cartoon illustration" loading="lazy">
+        <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic1.jpg" class="igloo-slide" alt="Talk photo 1" loading="lazy">
+        <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic2.jpg" class="igloo-slide" alt="Talk photo 2" loading="lazy">
+        <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpg" class="igloo-slide" alt="Talk photo 3" loading="lazy">
       </div>
 
-      <!-- BIGGER, CLEARER CONTROLS -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#iglooCarousel" data-bs-slide="prev" aria-label="Previous">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#iglooCarousel" data-bs-slide="next" aria-label="Next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <!-- BIG, CLEAR ARROWS -->
+      <button class="igloo-nav prev" type="button" aria-label="Previous photo" data-prev>‹</button>
+      <button class="igloo-nav next" type="button" aria-label="Next photo" data-next>›</button>
     </div>
   </div>
 </div>
+
+<!-- Minimal self-contained JS -->
+<script>
+(function () {
+  const slider = document.getElementById('iglooSlider1');
+  if (!slider) return;
+  const track = slider.querySelector('[data-track]');
+  const slides = Array.from(track.children);
+  let index = 0;
+
+  function go(i) {
+    index = (i + slides.length) % slides.length;
+    track.scrollTo({ left: slides[index].offsetLeft, behavior: 'smooth' });
+  }
+
+  slider.querySelector('[data-prev]').addEventListener('click', function(){ go(index - 1); });
+  slider.querySelector('[data-next]').addEventListener('click', function(){ go(index + 1); });
+
+  // Keep index in sync when user swipes/scrolls
+  let ticking = false;
+  track.addEventListener('scroll', function () {
+    if (ticking) return;
+    requestAnimationFrame(function () {
+      const mid = track.scrollLeft + track.clientWidth / 2;
+      index = slides.reduce((best, _, i) => {
+        const c = slides[i].offsetLeft + slides[i].clientWidth / 2;
+        const cb = slides[best].offsetLeft + slides[best].clientWidth / 2;
+        return Math.abs(c - mid) < Math.abs(cb - mid) ? i : best;
+      }, 0);
+      ticking = false;
+    });
+    ticking = true;
+  });
+})();
+</script>
 
