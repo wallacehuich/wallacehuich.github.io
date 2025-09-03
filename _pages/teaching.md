@@ -9,7 +9,7 @@ nav_order: 6
 
 ### From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity (Hong Kong Space Museum, 30 Aug 2025)
 
-How does hydrogen bonding in water molecules relate to the history of humans in the Arctic? I had the privilege of speaking at the Hong Kong Space Museum as part of the “Unveiling the Arctic: Then and Now” Lecture Series, co-organised with the Geological Society of London Hong Kong Regional Group (GSL-HKRG). My talk, “From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity” (In Chinese：《從電子到雪屋：北極智慧的分子奧秘》), explored how the molecular arrangements of water molecules connect directly to Inuit ingenuity and development.
+How does hydrogen bonding in water molecules relate to the history of humans in the Arctic? I had the privilege of speaking at the Hong Kong Space Museum as part of the “Unveiling the Arctic: Then and Now” Lecture Series, co-organised with the Geological Society of London Hong Kong Regional Group (GSL-HKRG). My talk, “From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity” (In Chinese:《從電子到雪屋：北極智慧的分子奧秘》), explored how the molecular arrangements of water molecules connect directly to Inuit ingenuity and development.
 
 Together, we looked at:
 • The history of Inuits and their migration across generations
