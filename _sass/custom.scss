@@ -1,4 +1,6 @@
-/* Teaching: igloo section */
+/* --- Custom styles for the Igloo Teaching section --- */
+
+/* Make the page text nicely justified */
 .teach-igloo .justify,
 .teach-igloo li {
   text-align: justify;
@@ -10,6 +12,32 @@
   margin-bottom: 0.5rem;
 }
 
-.teach-igloo .carousel .carousel-item img {
+/* Title split: keep main title size; make date smaller on a new line */
+.igloo-title .subtitle {
+  display: block;
+  font-size: 0.8em;          /* smaller date line */
+  color: #6b7280;            /* muted grey */
+  margin-top: .15rem;
+}
+
+/* Carousel visuals + larger click targets */
+.igloo-carousel .carousel-item img {
+  aspect-ratio: 16 / 9;      /* consistent frame */
   object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Make arrow hit-areas wider (easier to click) */
+.igloo-carousel .carousel-control-prev,
+.igloo-carousel .carousel-control-next {
+  width: 12%;
+}
+
+/* Make arrow icons larger + add subtle shadow for visibility */
+.igloo-carousel .carousel-control-prev-icon,
+.igloo-carousel .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-size: 100% 100%;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,.35));
 }
