@@ -7,11 +7,17 @@ nav: true
 nav_order: 6
 ---
 
-<div class="row align-items-center teach-igloo my-4">
-  <!-- Text (left) -->
-  <div class="col-md-6">
-    <h3 class="mb-3">From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity (Hong Kong Space Museum, 30 Aug 2025)</h3>
+<div class="row teach-igloo my-4">
+  <!-- FULL-WIDTH TITLE -->
+  <div class="col-12">
+    <h3 class="mb-3 igloo-title">
+      From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity
+      <span class="subtitle">(Hong Kong Space Museum, 30 Aug 2025)</span>
+    </h3>
+  </div>
 
+  <!-- TEXT (LEFT) -->
+  <div class="col-md-6">
     <p class="justify">
       How does hydrogen bonding in water molecules relate to the history of humans in the Arctic? I had the privilege of speaking at the Hong Kong Space Museum as part of the “Unveiling the Arctic: Then and Now” Lecture Series, co-organised with the Geological Society of London Hong Kong Regional Group (GSL-HKRG). My talk, “From Electrons to Igloos: The Molecular Foundations of Arctic Ingenuity” (In Chinese:《從電子到雪屋：北極智慧的分子奧秘》), explored how the molecular arrangements of water molecules connect directly to Inuit ingenuity and development.
     </p>
@@ -25,14 +31,15 @@ nav_order: 6
     </ul>
 
     <p class="mt-3">
-      <a class="btn btn-dark" href="/teaching/HKSM_talk" target="_blank" rel="noopener">View the lecture slides →</a>
+      <a class="btn btn-dark" href="/teaching/HKSM_talk" target="_blank" rel="noopener">VIEW THE LECTURE SLIDES →</a>
     </p>
   </div>
 
-  <!-- Slideshow (right) -->
+  <!-- SLIDESHOW (RIGHT) -->
   <div class="col-md-6">
-    <div id="iglooCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner ratio ratio-16x9">
+    <div id="iglooCarousel" class="carousel slide igloo-carousel"
+         data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="/assets/img/teaching/Spacemuseum_Aug2025/arctic_cartoon.jpg" class="d-block w-100 rounded" alt="Illustration">
         </div>
@@ -46,11 +53,15 @@ nav_order: 6
           <img src="/assets/img/teaching/Spacemuseum_Aug2025/pic3.jpg" class="d-block w-100 rounded" alt="Group photo">
         </div>
       </div>
+
+      <!-- BIGGER, CLEARER CONTROLS -->
       <button class="carousel-control-prev" type="button" data-bs-target="#iglooCarousel" data-bs-slide="prev" aria-label="Previous">
-        <span class="carousel-control-prev-icon"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#iglooCarousel" data-bs-slide="next" aria-label="Next">
-        <span class="carousel-control-next-icon"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
