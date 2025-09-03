@@ -22,7 +22,6 @@
 
 /* ============================
    Self-contained slideshow
-   (no Bootstrap JS required)
    ============================ */
 
 .igloo-slider {
@@ -39,15 +38,16 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* Each slide fills the frame */
+/* Each slide: keep full content visible */
 .igloo-slide {
   flex: 0 0 100%;
   width: 100%;
-  aspect-ratio: 16 / 9;      /* consistent frame */
-  object-fit: cover;         /* neat crop; use 'contain' if you prefer letterboxing */
-  scroll-snap-align: center;
+  height: auto;
+  object-fit: contain;       /* show whole image, no cropping */
+  background: #f7f7f7;       /* neutral backdrop for letterboxing */
   border-radius: 12px;
   border: 1px solid #e5e7eb;
+  scroll-snap-align: center;
 }
 
 /* Big, clear, accessible nav arrows */
@@ -83,10 +83,10 @@
   .igloo-nav:hover { background: rgba(0, 0, 0, .75); }
 }
 
-/* Hide scrollbar for a cleaner look (visual only) */
+/* Hide scrollbar for a cleaner look */
 .igloo-track::-webkit-scrollbar { display: none; }
 
-/* Optional: respect reduced motion */
+/* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .igloo-track { scroll-behavior: auto; }
 }
