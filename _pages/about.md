@@ -38,6 +38,6 @@ I am a computational geochemist interested in the physical chemistry of aqueous 
 </p>
 
 <p align="justify">
-Recently, my research has ventured into the fascinating topic of water nanodroplets, revealing how droplet surface and interior create unique solvation environments — with distinct variations in density, pH, dielectric properties, and more. These differences profoundly impact chemical speciation behaviours and metal complexation strengths. Explore this site for highlights of my research, publications, and the innovative projects!
+Recently, my research has ventured into the fascinating topic of water nanodroplets, revealing how droplet surface and interior create unique solvation environments — with distinct variations in density, pH, dielectric properties, and more. These differences profoundly impact chemical speciation behaviours and metal complexation strengths. Explore this site for highlights of my research, publications, and projects!
 </p>
 </div>
